@@ -1,0 +1,149 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    
+  }
+  
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 20px;
+    height: 80px;
+    color: #fff;
+    z-index: 1000;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 30px;
+   font-weight: bolder;
+
+  }
+  
+  .navbar ul li {
+   
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar ul li:hover,
+  .navbar .icons i:hover {
+    background-color: rgba(224, 219, 219, 0.47);
+    color: black;
+  }
+  .dropdown li ul a{
+    display: block;
+    color: black;
+   
+  }
+  .dropdown li ul.content{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.429);
+  }
+
+  .dropdown:hover li ul.content{
+    display: block;
+  }
+  
+  .logo {
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+   filter: brightness(0) invert(1);
+  }
+  .navbar .icons {
+    display: flex;
+    font-size: 50px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar .icons i {
+    border-radius: 50%;
+    padding: 3px;
+   
+  }
+  
+  .pages {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    flex-direction: column;
+  }
+  .pages li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    color: #fff;
+
+  }
+  .pages li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .page h1 {
+    font-size: 120px;
+  }
+  .page h3{
+    font-size: 50px;
+  }
+
+  .page h1,
+  .page h3 {
+    font-weight:bold;
+  }
+  p{
+    font-size: 30px;
+  }
+  .footer .buttons {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .footer .buttons button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 150px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer .buttons button:first-child {
+    background-color:#3e6ae1;
+    color: #fff;}
+    
+  .footer .buttons button:last-child {
+    background-color:#fff;
+    color:#393c41;}
+  
+  
+
+ 
